@@ -196,6 +196,7 @@ if st.sidebar.button("Predict Risk"):
 
     st.markdown("#### Local Feature Impacts Plot")
     try:
-        st.image(r"d:\ds project\credit-risk-project\visuals\shap_local_explanation.png", use_container_width=True)
+        img_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'visuals', 'shap_local_explanation.png')
+        st.image(img_path, use_container_width=True)
     except Exception as e:
         st.warning("Local explanation plot not found.")

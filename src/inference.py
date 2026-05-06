@@ -5,7 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class CreditRiskPredictor:
-    def __init__(self, models_dir=r"d:\ds project\credit-risk-project\models"):
+    def __init__(self, models_dir=None):
+        if models_dir is None:
+            models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'models')
         self.models_dir = models_dir
         self.preprocessor = joblib.load(os.path.join(models_dir, 'preprocessor.joblib'))
         self.model = joblib.load(os.path.join(models_dir, 'logistic_regression_model.joblib'))
@@ -42,10 +44,13 @@ class CreditRiskPredictor:
             
         return prob, category, X_processed_df
 
-    def explain_prediction(self, X_processed_df, visuals_dir=r"d:\ds project\credit-risk-project\visuals"):
+    def explain_prediction(self, X_processed_df, visuals_dir=None):
         """
         Generate local explainer for a single prediction using Logistic Regression coefficients.
         """
+        if visuals_dir is None:
+            visuals_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'visuals')
+            
         os.makedirs(visuals_dir, exist_ok=True)
         
         # Get coefficients and feature values
