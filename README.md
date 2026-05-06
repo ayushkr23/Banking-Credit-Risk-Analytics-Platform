@@ -63,15 +63,5 @@ credit-risk-project/
    streamlit run app/app.py
    ```
 
-## ☁️ Deployment (Streamlit Community Cloud)
-
-This project is perfectly structured for instantaneous deployment via **Streamlit Community Cloud**.
-1. Push this code to a public GitHub repository.
-2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in.
-3. Click **"New App"**.
-4. Select your GitHub repository.
-5. Set the Main file path to: `app/app.py`
-6. Click **Deploy!**
-
 ## 📊 Dataset Attribution
 This project utilizes the German Credit Risk dataset originally sourced from OpenML/Kaggle, modified to merge the definitive binary target variable.
