@@ -6,6 +6,9 @@
 
 An end-to-end Machine Learning pipeline and interactive web application that predicts the likelihood of a customer defaulting on a loan based on financial and personal attributes. Built with **Python, Scikit-Learn, and Streamlit**, featuring a stunning dark-mode Glassmorphism UI.
 
+### 🌐 Live Application
+**[Click here to view the live dashboard!](https://banking-credit-risk-analytics.streamlit.app/)**
+
 ## ✨ Features
 * **Full Data Pipeline**: Automated preprocessing, missing value imputation, and One-Hot Encoding.
 * **Class Balancing**: Utilizes SMOTE (Synthetic Minority Over-sampling Technique) to ensure the model learns equally from Safe and High-Risk customers.
