@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.inference import CreditRiskPredictor
 
-st.set_page_config(page_title="Credit Risk Predictor", page_icon="🏦", layout="wide")
+st.set_page_config(page_title="Banking Credit Risk Analytics Platform", page_icon="🏦", layout="wide")
 
 # Custom CSS for banking style
 st.markdown("""
@@ -120,7 +120,7 @@ except Exception as e:
     st.error(f"Error loading models: {e}. Please ensure you have run the training pipeline.")
     st.stop()
 
-st.title("🏦 AI-Powered Credit Risk Prediction System")
+st.title("🏦 Banking Credit Risk Analytics Platform")
 st.markdown("Predict whether a customer is likely to default on a loan based on financial and personal attributes.")
 
 # Sidebar for inputs
